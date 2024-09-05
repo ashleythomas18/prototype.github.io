@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #d3d3d3; /* Grey background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.page-heading {
+    text-align: center;
+    color: #007bff; /* Light blue heading */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.content-image {
+    width: 60%; /* Adjust this to your preferred size */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: block; /* Ensure images align properly */
+    margin-left: auto;
+    margin-right: auto; /* Center the images */
+}
+
+
+.content-section img {
+    max-width: 100%;
+    border: 2px solid #999;
+    
+}
+
+.content-section img:hover {
+    border-color: #add8e6; /* Light blue border on hover */
+}

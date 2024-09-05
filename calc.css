@@ -1,0 +1,124 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+}
+
+/* Calculator Container */
+.calculator-container {
+    width: 85%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Main Heading */
+.calculator-container h1 {
+    color: #3498db; /* Light blue heading */
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Formula Box */
+.formula-box {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Formula Box Hover Effect */
+.formula-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Formula Heading */
+.formula-box h2 {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+/* Input Styling */
+input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Result Paragraph */
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Mobile Friendly Layout */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .formula-box {
+        margin: 0 20px;
+    }
+}

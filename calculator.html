@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emission Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="calcc.js">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Carbon Emission Calculator</h1>
+
+        <div class="grid-container">
+            <!-- Formula 1 -->
+            <div class="formula-box">
+                <h2>Emission from Coal Burning</h2>
+                <form id="formula1">
+                    <label for="coalWeight">Coal Weight (in tonnes):</label>
+                    <input type="number" id="coalWeight" name="coalWeight" required><br><br>
+                    
+                    <label for="carbonFactor">Carbon Emission Factor (constant = 2.5):</label>
+                    <input type="number" id="carbonFactor" name="carbonFactor" value="2.5" readonly><br><br>
+
+                    <label for="burningEfficiency">Burning Efficiency (%):</label>
+                    <input type="number" id="burningEfficiency" name="burningEfficiency" required><br><br>
+
+                    <button type="button" onclick="calculateFormula1()">Calculate</button>
+                    <p>Result: <span id="result1"></span> MT CO<sub>2</sub></p>
+                </form>
+            </div>
+
+            <!-- Formula 2 -->
+            <div class="formula-box">
+                <h2>Emission Reduction via Afforestation</h2>
+                <form id="formula2">
+                    <label for="forestArea">Afforested Area (in hectares):</label>
+                    <input type="number" id="forestArea" name="forestArea" required><br><br>
+
+                    <label for="carbonSequestration">Carbon Sequestration Rate (constant = 10):</label>
+                    <input type="number" id="carbonSequestration" name="carbonSequestration" value="10" readonly><br><br>
+
+                    <label for="years">Years of Growth:</label>
+                    <input type="number" id="years" name="years" required><br><br>
+
+                    <button type="button" onclick="calculateFormula2()">Calculate</button>
+                    <p>Result: <span id="result2"></span> MT CO<sub>2</sub> offset</p>
+                </form>
+            </div>
+
+            <!-- Formula 3 -->
+            <div class="formula-box">
+                <h2>Renewable Energy Replacement</h2>
+                <form id="formula3">
+                    <label for="energyProduced">Energy Produced (in MWh):</label>
+                    <input type="number" id="energyProduced" name="energyProduced" required><br><br>
+
+                    <label for="carbonIntensity">Carbon Intensity of Fossil Fuel (constant = 0.5):</label>
+                    <input type="number" id="carbonIntensity" name="carbonIntensity" value="0.5" readonly><br><br>
+
+                    <label for="renewableFactor">Renewable Energy Replacement Factor:</label>
+                    <input type="number" id="renewableFactor" name="renewableFactor" required><br><br>
+
+                    <button type="button" onclick="calculateFormula3()">Calculate</button>
+                    <p>Result: <span id="result3"></span> MT CO<sub>2</sub> saved</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

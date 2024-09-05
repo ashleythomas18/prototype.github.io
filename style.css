@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8198b4;
+    /* margin: 0;
+      padding: 0; */
+  }
+  
+  header{
+      background-color: hsl(0, 15%, 89%);
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 110px;
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  
+  .title {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px gray;
+  }
+  
+  .team {
+    margin-right: 25px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 25px;
+    border: solid 2px white;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .team:hover{
+      border: solid 2px black;
+  
+  }
+  
+  .nav {
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    color: #fafcfc;
+    background-color: #232f3e;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 50px;
+    
+  }
+  
+  .nav .opt {
+    
+    padding: 0 32px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .nav a {
+    color: white; /* Default color for links */
+    text-decoration: none; /* Optional: remove underline */
+  }
+  
+  .nav a:visited {
+    color: white; /* Ensure visited links remain white */
+  }
+  
+  .nav .opt:hover{
+      border: solid 1px white;
+  }
+  
+  .mine-img {
+    background-image: url(./logo/mine.jpg);
+    margin-top: 10px;
+    /* height: 490px;
+    width: 1100px;
+    align-content: center;
+    background-color: #273648; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .main{
+    display: flex;
+    height: 400px;
+    width: 100vw;
+    color: #fafcfc;
+    background-color: #8198b4;
+    /* align-items: center;
+    font-size: 15px; */
+    margin-top: 10px;
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+
+  .total-mines{
+    width: 250px;
+    padding: 25px 50px;
+    height: 60px;
+    font-size: 19px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color: #4682B4;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin to be consistent */
+}
+.gevra{
+    width: 250px;
+    padding: 25px 50px;
+    height: 60px;
+    font-size: 19px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color: #228B22;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin to be consistent */
+}
+.c-f {
+    width: 250px;
+    padding: 25px 50px;
+    height: 60px;
+    font-size: 19px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color:#B87333;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin to be consistent */
+}
+.c-f {
+    margin-left: 25px;
+    margin-right: 90px;
+}
+
+.big-number {
+    font-size: 30px; /* Larger size for '600' */
+    font-weight: bold;
+}
+
+.mine-name {
+    font-size: 28px; /* Larger size for 'GEVRA Mines' */
+    font-weight: bold;
+}
+
+.c-f-title {
+    font-size: 28px; /* Make the Carbon Footprint box title a bit bigger */
+    font-weight: bold;
+}
+.total-mines:hover, .gevra:hover, .c-f:hover {
+    cursor: pointer; /* Changes the cursor to pointer */
+    outline: 3px solid #1a1918; /* Changes the box outline color (yellow) */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Adds a shadow for extra effect */
+    transform: scale(1.05); /* Slightly increases size for emphasis */
+}
+  
+  /* .main .main-opt{
+    margin-top: 0;
+    margin-right: 70px;
+    padding: 0 60px;
+    border: solid 1px transparent;
+    border-radius: 5px;  
+    color: #0e2b4f;
+    font-size: 18px;
+  } */
+  
+  /* .main .main-opt:hover{
+     color: #230c4a;
+     text-decoration: underline;
+  } 
+  
+  .total-mines{
+      height: auto;
+      width: 400px;
+      margin-right: 70px;
+      margin-left: 10px;
+      margin-right: 25px;
+    
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    font-size: 20px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color: rgb(102, 226, 19);
+    margin-left: 25px;
+    margin-bottom: 300px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+  }
+  
+  .gevra{
+      height: auto;
+      width: 550px;
+      margin-right: 90px;
+      margin-left: 10px;
+      padding-right: 50px;
+      padding-top: 25px;
+    padding-left: 50px;
+    font-size: 19px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color: rgb(102, 226, 19);
+    margin-left: 25px;
+    margin-bottom: 300px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+  }
+  
+  /*.secl{
+      height: auto;
+      width: 350px;
+      margin-right: 70px;
+      /* margin-left: 70px; 
+      padding-right: 50px;
+      padding-top: 25px;
+    padding-left: 50px;
+    font-size: 19px;
+    border: solid 2px white;
+    border-radius: 50px;
+    background-color: rgb(102, 226, 19);
+    margin-left: 25px;
+    margin-bottom: 300px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .c-f {
+    height: auto;
+    width: 250px;
+    margin-right: 90px;
+    margin-left: 30px;
+    padding-right: 50px;
+    padding-top: 25px;
+  padding-left: 50px;
+  font-size: 19px;
+  border: solid 2px white;
+  border-radius: 50px;
+  background-color: rgb(102, 226, 19);
+  margin-left: 25px;
+  margin-bottom: 300px;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  }*/ 
+  
+  /* .india-map {
+    background-image: url(./minesinindia.jpeg);
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 20px;
+  } */
+  
+  .maps{
+    display: flex;
+    align-items: center; /* Center vertically if needed */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space out the items equally */
+    align-items: stretch; /* Make sure both items stretch to the same height */
+    height: 100%; 
+    
+}
+
+  .production-img{
+    background-image: url(./logo/Coal-Production-2024-SHARE-1000x600.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 900vh;
+    margin-bottom: 0;
+    margin-left: 20px;
+  } 
+  
+  .descrip{
+      margin-left: 80px;
+      margin-right: 30px;
+      font-size: larger;
+      margin-bottom: 200px;
+  }
+  
+
+  
+  .footer {
+      text-align: center;
+      background-color: #597290;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
